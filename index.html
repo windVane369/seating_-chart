@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级座次表</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common/jquery.min.js"></script>
+    <script src="./js/common/xlsx.core.min.js"></script>
+    <script src="./js/read_xlsx.js"></script>
+    <script src="./js/move_student.js"></script>
+    <script src="./js/refresh.js"></script>
+    <script src="./js/output_xlsx.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='content_left'>
+            <div id="displayRoom1">
+
+                <div class="box3">
+                    <center>
+                        <font size="5" face="arial" color="red">后&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 门</font>
+                    </center>
+                    <div class="row">
+                        <!-- <span class="placeholder"></span> -->
+                        <span><span class="usr" id="37"></span></span>
+                        <span><span class="usr" id="38"></span></span>
+                        <span><span class="usr" id="39"></span></span>
+                        <span><span class="usr" id="40"></span></span>
+                        <span><span class="usr" id="41"></span></span>
+                        <!-- <span><span class="usr" id="42"></span></span> -->
+                    </div>
+                    <div class="row">
+                        <!-- <span class="placeholder"></span> -->
+                        <span><span class="usr" id="43"></span></span>
+                        <span><span class="usr" id="44"></span></span>
+                        <span><span class="usr" id="45"></span></span>
+                        <span><span class="usr" id="46"></span></span>
+                        <span><span class="usr" id="47"></span></span>
+                        <!-- <span><span class="usr" id="48"></span></span> -->
+                    </div>
+                    <div class="row">
+                        <!-- <span class="placeholder"></span> -->
+                        <span><span class="usr" id="49"></span></span>
+                        <span><span class="usr" id="50"></span></span>
+                        <span><span class="usr" id="51"></span></span>
+                        <span><span class="usr" id="52"></span></span>
+                        <span><span class="usr" id="53"></span></span>
+                        <!-- <span><span class="usr" id="54"></span></span> -->
+                    </div>
+                    <center>
+                        <font size="5" face="arial" color="red">前&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 门</font>
+                    </center>
+                </div>
+
+                <div class="box2">
+                    <div class="row">
+                        <span><span class="usr" id="19"></span></span>
+                        <span><span class="usr" id="20"></span></span>
+                        <span><span class="usr" id="21"></span></span>
+                        <span><span class="usr" id="22"></span></span>
+                        <span><span class="usr" id="23"></span></span>
+                        <span><span class="usr" id="24"></span></span>
+                        <span><span class="usr" id="42"></span></span>
+                    </div>
+                    <div class="row">
+                        <span><span class="usr" id="25"></span></span>
+                        <span><span class="usr" id="26"></span></span>
+                        <span><span class="usr" id="27"></span></span>
+                        <span><span class="usr" id="28"></span></span>
+                        <span><span class="usr" id="29"></span></span>
+                        <span><span class="usr" id="30"></span></span>
+                        <span><span class="usr" id="48"></span></span>
+                    </div>
+                    <div class="row">
+                        <span><span class="usr" id="31"></span></span>
+                        <span><span class="usr" id="32"></span></span>
+                        <span><span class="usr" id="33"></span></span>
+                        <span><span class="usr" id="34"></span></span>
+                        <span><span class="usr" id="35"></span></span>
+                        <span><span class="usr" id="36"></span></span>
+                        <span><span class="usr" id="54"></span></span>
+                    </div>
+                    <center>
+                        <font size="5" face="arial" color="red">讲&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 台</font>
+                    </center>
+                </div>
+
+                <div class="box1">
+                    <div class="row">
+                        <span class="placeholder"></span>
+                        <span><span class="usr" id="1"></span></span>
+                        <span><span class="usr" id="2"></span></span>
+                        <span><span class="usr" id="3"></span></span>
+                        <span><span class="usr" id="4"></span></span>
+                        <span><span class="usr" id="5"></span></span>
+                        <span><span class="usr" id="6"></span></span>
+                    </div>
+                    <div class="row">
+                        <span class="placeholder"></span>
+                        <span><span class="usr" id="7"></span></span>
+                        <span><span class="usr" id="8"></span></span>
+                        <span><span class="usr" id="9"></span></span>
+                        <span><span class="usr" id="10"></span></span>
+                        <span><span class="usr" id="11"></span></span>
+                        <span><span class="usr" id="12"></span></span>
+                    </div>
+                    <div class="row">
+                        <span class="placeholder"></span>
+                        <span><span class="usr" id="13"></span></span>
+                        <span><span class="usr" id="14"></span></span>
+                        <span><span class="usr" id="15"></span></span>
+                        <span><span class="usr" id="16"></span></span>
+                        <span><span class="usr" id="17"></span></span>
+                        <span><span class="usr" id="18"></span></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='cut_off_line'>
+            <input type="file" id="file" />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <button type="button" id='output' onclick='outputExcel()'>左侧数据导出</button>
+        </div>
+        <div class='content_right'>
+            <div id="displayRoom2">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

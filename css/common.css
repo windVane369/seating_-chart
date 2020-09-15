@@ -1,0 +1,100 @@
+.container {
+    width: 100%;
+    height: 1000px;
+    /* background-color: pink; */
+}
+
+.content_right,
+.content_left {
+    float: left;
+    width: 55%;
+    height: 100%;
+}
+
+.cut_off_line {
+    float: left;
+    width: 10%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.content_right {
+    float: right;
+    width: 34.5%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+#displayRoom1,
+#displayRoom2 {
+    background: #eee;
+    position: relative;
+    float: left;
+    clear: both;
+    padding: 30px 10px 0px 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.placeholder {
+    background: #eee!important;
+}
+
+.box,
+.box1,
+.box2,
+.box3 {
+    float: left;
+    padding: 30px 20px 0px 20px;
+}
+
+.row {
+    display: inline-block;
+    float: left;
+    width: 70px;
+    clear: none;
+    top: 0;
+    /*background:#DFEFFC;*/
+}
+
+.row span {
+    display: inline-block;
+    width: 60px;
+    clear: none;
+    background: #9192B1;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+span.usr {
+    float: left;
+    cursor: pointer;
+    /* position: absolute; */
+    display: inline-block;
+    width: 60px;
+    clear: none;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    background: #4DA74D;
+    color: #fff;
+}
+
+span.man {
+    background: blue;
+}
+
+span.woman {
+    background: pink;
+}
+
+span.usr.catch {
+    background: #BD9B33!important;
+}
+
+center {
+    padding: 0px 20px 20px 20px;
+}
