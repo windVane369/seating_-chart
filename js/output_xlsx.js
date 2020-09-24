@@ -14,9 +14,9 @@ function getBoxData(box) {
 
 function getBox1Data(box1) {
     box1List = getBoxData(box1);
-    for (var i = 0; i < box1List.length; i++) {
-        box1List[i].unshift('');
-    }
+    // for (var i = 0; i < box1List.length; i++) {
+    //     box1List[i].unshift('');
+    // }
     return box1List.reverse();
 }
 
@@ -26,10 +26,10 @@ function getBox2Data(box2) {
 
 function getBox3Data(box3) {
     box3List = getBoxData(box3);
-    for (var i = 0; i < box3List.length; i++) {
-        box3List[i].push('');
-        box3List[i].unshift('');
-    }
+    // for (var i = 0; i < box3List.length; i++) {
+    //     box3List[i].push('');
+    //     box3List[i].unshift('');
+    // }
     return box3List.reverse();
 }
 

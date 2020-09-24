@@ -236,6 +236,15 @@ window.onload = function() {
     setdragreplace(document.getElementById('52'));
     setdragreplace(document.getElementById('53'));
     setdragreplace(document.getElementById('54'));
+    setdragreplace(document.getElementById('55'));
+    setdragreplace(document.getElementById('56'));
+    setdragreplace(document.getElementById('57'));
+    setdragreplace(document.getElementById('58'));
+    setdragreplace(document.getElementById('59'));
+    setdragreplace(document.getElementById('60'));
+    setdragreplace(document.getElementById('61'));
+    setdragreplace(document.getElementById('62'));
+    setdragreplace(document.getElementById('63'));
 };
 
 // 创建右侧边栏的数据集
