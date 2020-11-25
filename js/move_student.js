@@ -245,6 +245,7 @@ window.onload = function() {
     setdragreplace(document.getElementById('61'));
     setdragreplace(document.getElementById('62'));
     setdragreplace(document.getElementById('63'));
+    setdragreplace(document.getElementById('64'));
 };
 
 // 创建右侧边栏的数据集
