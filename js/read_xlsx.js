@@ -31,10 +31,11 @@ $(document).ready(function() {
         html = '<div class="box"><div class="row">'
         var i;
         for (i = 0; i < data.length; i++) {
+            number = data[i]['学号'].replace(/(^\s*)|(\s*$)/g, "");
             if ('学生姓名' in data[i]) {
-                name = data[i]['学生姓名']
+                name = number.substr(number.length - 2, 2) + data[i]['学生姓名'];
             } else {
-                name = data[i]['姓名']
+                name = number.substr(number.length - 2, 2) + data[i]['姓名'];
             }
             if (data[i]['性别'] == '男') {
 
