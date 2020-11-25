@@ -33,9 +33,12 @@ function getBox3Data(box3) {
     return box3List.reverse();
 }
 
-function dataMerge(box1List, box2List, box3List) {
-    boxList = box3List.concat(box2List);
-    return boxList.concat(box1List);
+function getBox4Data(box4) {
+    return getBoxData(box4).reverse();
+}
+
+function dataMerge(box1List, box2List, box3List, box4List) {
+    return box1List.concat(box2List).concat(box3List).concat(box4List);
 }
 
 function dataTransfer(boxList) {
@@ -74,7 +77,8 @@ function outputExcel() {
     box1List = getBox1Data(data.getElementsByClassName('box1')[0]);
     box2List = getBox2Data(data.getElementsByClassName('box2')[0]);
     box3List = getBox3Data(data.getElementsByClassName('box3')[0]);
-    boxList = dataMerge(box1List, box2List, box3List);
+    box4List = getBox4Data(data.getElementsByClassName('box4')[0]);
+    boxList = dataMerge(box1List, box2List, box3List, box4List);
     boxList = dataTransfer(boxList);
     data2Csv(boxList);
 }
