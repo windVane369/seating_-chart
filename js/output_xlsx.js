@@ -43,7 +43,7 @@ function dataMerge(box1List, box2List, box3List, box4List) {
 
 function dataTransfer(boxList) {
     resultList = [];
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 8; i++) {
         result = [];
         for (var j = 0; j < boxList.length; j++) {
             result.push(boxList[j][i]);
